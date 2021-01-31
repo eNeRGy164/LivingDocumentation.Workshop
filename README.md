@@ -23,9 +23,9 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
 * [Get familiar with Syntax Trees](1.roslyn/11.visual-trees.md)
 
-  Visually inspect a syntax tree of an application.
+  Visually inspect the syntax tree of an application.
 
-* Parse source code
+* [Parse source code](1.roslyn/12.parse-trees.md)
 
   Parse a syntax tree and inspect the structure.
 
