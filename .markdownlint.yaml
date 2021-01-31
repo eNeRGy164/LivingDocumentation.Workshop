@@ -1,0 +1,9 @@
+default: true
+
+line-length:
+  line_length: 160
+  heading_line_length: 80
+  code_block_line_length: 80
+
+no-duplicate-heading:
+  siblings_only: true
