@@ -31,9 +31,24 @@ namespace ConsoleApp1
             var method = @class.Members.OfType<MethodDeclarationSyntax>().First();
             var expressionStatement = method.Body.Statements.OfType<ExpressionStatementSyntax>().First();
 
+            #region optional
+            var invocationExpression = expressionStatement.Expression as InvocationExpressionSyntax;
+            var memberAccessExpression = invocationExpression.Expression as MemberAccessExpressionSyntax;
+            #endregion
+
             var sourceText = tree.GetText();
             Console.WriteLine(sourceText.GetSubText(@using.Span));
             Console.WriteLine(sourceText.GetSubText(expressionStatement.Span));
+
+            #region optional
+            Console.WriteLine(sourceText.GetSubText(memberAccessExpression.Expression.Span));
+            Console.WriteLine(sourceText.GetSubText(memberAccessExpression.Name.Span));
+            #endregion
+
+            #region awesomesauce
+            var argument = invocationExpression.ArgumentList.Arguments.First();
+            Console.WriteLine(sourceText.GetSubText(argument.Span));
+            #endregion
         }
     }
 }
