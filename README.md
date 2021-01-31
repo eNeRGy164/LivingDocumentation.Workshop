@@ -33,13 +33,13 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Compile a syntax tree and inspect the semantic model.
 
-* [Walk a Syntax Tree](1.1.roslyn/14.walk-trees.md)
+* [Walk a Syntax Tree](1.roslyn/14.walk-trees.md)
 
   Use the visitor pattern to act on specific parts of your tree.
 
-* Load a whole project
+* [Load a Project or Solution](1.roslyn/15.load-a-project.md)
 
-  Use [Buildalyzer](https://github.com/daveaglick/Buildalyzer) to import a whole project or solution to inspect.
+  Use [Buildalyzer](https://github.com/daveaglick/Buildalyzer) to import a whole project or solution to work with.
 
 ### Part 2: Generate documentation
 
