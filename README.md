@@ -25,15 +25,15 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Visually inspect the syntax tree of an application.
 
-* [Parse source code](1.roslyn/12.parse-trees.md)
+* [Parse Source Code](1.roslyn/12.parse-trees.md)
 
   Parse a syntax tree and inspect the structure.
 
-* [Compile source code](1.roslyn/13.compile-code.md)
+* [Compile Source Code](1.roslyn/13.compile-code.md)
 
   Compile a syntax tree and inspect the semantic model.
 
-* Walk the tree
+* [Walk a Syntax Tree](1.1.roslyn/14.walk-trees.md)
 
   Use the visitor pattern to act on specific parts of your tree.
 
