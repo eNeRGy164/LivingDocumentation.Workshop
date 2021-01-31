@@ -29,7 +29,7 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Parse a syntax tree and inspect the structure.
 
-* Compile source code
+* [Compile source code](1.roslyn/13.compile-code.md)
 
   Compile a syntax tree and inspect the semantic model.
 
