@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Background="#FFD3D3D3" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1" Category="0" AllowsAnyExpression="False" Bounds="588.571666666667,0,162.603333333333,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[121..169) Length: 48" HasLeadingTrivia="True" HasStructuredTrivia="False" HasTrailingTrivia="True" IsMissing="False" IsStructuredTrivia="False" Kind="ExpressionStatement" Label="ExpressionStatement Node" Language="C#" Span="[133..167) Length: 34" Type="ExpressionStatementSyntax" />
+    <Node Id="10" Category="0" Bounds="465.076666666667,111.92,123.593333333333,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[150..166) Length: 16" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsStructuredTrivia="False" Kind="ArgumentList" Label="ArgumentList Node" Language="C#" Span="[150..166) Length: 16" Type="ArgumentListSyntax" />
+    <Node Id="11" Category="1" Bounds="418.083333333333,167.88,63.58,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[150..151) Length: 1" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="OpenParenToken" Label="'(' Token" Language="C#" Span="[150..151) Length: 1" Type="SyntaxToken" />
+    <Node Id="12" Category="0" Bounds="511.935,167.88,105.876666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[151..165) Length: 14" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsStructuredTrivia="False" Kind="Argument" Label="Argument Node" Language="C#" Span="[151..165) Length: 14" Type="ArgumentSyntax" />
+    <Node Id="13" Category="0" Bounds="479.02,223.84,171.706666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[151..165) Length: 14" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsStructuredTrivia="False" Kind="StringLiteralExpression" Label="StringLiteralExpression Node" Language="C#" Span="[151..165) Length: 14" Type="LiteralExpressionSyntax" />
+    <Node Id="14" Category="1" Bounds="497.648333333333,279.8,134.45,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[151..165) Length: 14" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="StringLiteralToken" Label="'&quot;Hello World!&quot;' Token" Language="C#" Span="[151..165) Length: 14" Type="SyntaxToken" />
+    <Node Id="15" Category="1" Bounds="648.083333333333,167.88,63.58,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[165..166) Length: 1" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="CloseParenToken" Label="')' Token" Language="C#" Span="[165..166) Length: 1" Type="SyntaxToken" />
+    <Node Id="16" Category="1" Bounds="638.601666666667,55.96,62.5433333333333,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[166..169) Length: 3" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="True" IsMissing="False" Kind="SemicolonToken" Label="';' Token" Language="C#" Span="[166..167) Length: 1" Type="SyntaxToken" />
+    <Node Id="17" Category="3" Bounds="619.155,111.92,101.436666666667,25.96" ContainsDiagnostics="False" Errors="Count: 0" FullSpan="[167..169) Length: 2" HasStructure="False" IsDirective="False" Kind="EndOfLineTrivia" Label="EndOfLineTrivia" Language="C#" Span="[167..169) Length: 2" Type="SyntaxTrivia" />
+    <Node Id="2" Category="0" Bounds="443.956666666667,55.96,163.833333333333,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[121..166) Length: 45" HasLeadingTrivia="True" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsStructuredTrivia="False" Kind="InvocationExpression" Label="InvocationExpression Node" Language="C#" Span="[133..166) Length: 33" Type="InvocationExpressionSyntax" />
+    <Node Id="3" Category="0" Bounds="209.54,111.92,224.666666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[121..150) Length: 29" HasLeadingTrivia="True" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsStructuredTrivia="False" Kind="SimpleMemberAccessExpression" Label="SimpleMemberAccessExpression Node" Language="C#" Span="[133..150) Length: 17" Type="MemberAccessExpressionSyntax" />
+    <Node Id="4" Category="0" Arity="0" Bounds="0,167.88,131.746666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[121..140) Length: 19" HasLeadingTrivia="True" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsNint="False" IsNotNull="False" IsNuint="False" IsStructuredTrivia="False" IsUnmanaged="False" IsVar="False" Kind="IdentifierName" Label="IdentifierName Node" Language="C#" Span="[133..140) Length: 7" Type="IdentifierNameSyntax" />
+    <Node Id="5" Category="1" Bounds="15.4333333333332,223.84,100.88,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[121..140) Length: 19" HasLeadingTrivia="True" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="IdentifierToken" Label="'Console' Token" Language="C#" Span="[133..140) Length: 7" Type="SyntaxToken" />
+    <Node Id="6" Category="2" Bounds="11.6699999999998,279.8,108.406666666667,25.96" ContainsDiagnostics="False" Errors="Count: 0" FullSpan="[121..133) Length: 12" HasStructure="False" IsDirective="False" Kind="WhitespaceTrivia" Label="WhitespaceTrivia" Language="C#" Span="[121..133) Length: 12" Type="SyntaxTrivia" />
+    <Node Id="7" Category="1" Bounds="162.601666666667,167.88,62.5433333333334,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[140..141) Length: 1" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="DotToken" Label="'.' Token" Language="C#" Span="[140..141) Length: 1" Type="SyntaxToken" />
+    <Node Id="8" Category="0" Arity="0" Bounds="256,167.88,131.746666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[141..150) Length: 9" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" IsNint="False" IsNotNull="False" IsNuint="False" IsStructuredTrivia="False" IsUnmanaged="False" IsVar="False" Kind="IdentifierName" Label="IdentifierName Node" Language="C#" Span="[141..150) Length: 9" Type="IdentifierNameSyntax" />
+    <Node Id="9" Category="1" Bounds="267.165,223.84,109.416666666667,25.96" ContainsAnnotations="False" ContainsDiagnostics="False" ContainsDirectives="False" Errors="Count: 0" FullSpan="[141..150) Length: 9" HasLeadingTrivia="False" HasStructuredTrivia="False" HasTrailingTrivia="False" IsMissing="False" Kind="IdentifierToken" Label="'WriteLine' Token" Language="C#" Span="[141..150) Length: 9" Type="SyntaxToken" />
+  </Nodes>
+  <Links>
+    <Link Source="1" Target="16" Bounds="669.873352050781,25.9599990844727,0,21" />
+    <Link Source="1" Target="2" Bounds="567.663146972656,25.9599990844727,68.8092041015625,26.7400093078613" />
+    <Link Source="10" Target="11" Bounds="475.014007568359,137.880004882813,33.9990539550781,24.7089233398438" />
+    <Link Source="10" Target="12" Bounds="535.6875,137.880004882813,15.315673828125,22.5543975830078" />
+    <Link Source="10" Target="15" Bounds="562.361877441406,137.880004882813,78.4423828125,28.6904144287109" />
+    <Link Source="12" Target="13" Bounds="564.873352050781,193.839996337891,0,21" />
+    <Link Source="13" Target="14" Bounds="564.873352050781,249.800003051758,0,20.9999847412109" />
+    <Link Source="16" Target="17" Bounds="669.873352050781,81.9199981689453,0,21" />
+    <Link Source="2" Target="10" Bounds="526.105285644531,81.9199981689453,0.37530517578125,21.0014419555664" />
+    <Link Source="2" Target="3" Bounds="377.870788574219,81.9199981689453,100.684448242188,27.6191329956055" />
+    <Link Source="3" Target="4" Bounds="134.045272827148,137.880004882813,128.448501586914,28.0780334472656" />
+    <Link Source="3" Target="7" Bounds="230.615570068359,137.880004882813,61.5679931640625,26.916748046875" />
+    <Link Source="3" Target="8" Bounds="321.873321533203,137.880004882813,0,21" />
+    <Link Source="4" Target="5" Bounds="65.8733367919922,193.839996337891,0,21" />
+    <Link Source="5" Target="6" Bounds="65.8733367919922,249.800003051758,0,20.9999847412109" />
+    <Link Source="8" Target="9" Bounds="321.873321533203,193.839996337891,0,21" />
+  </Links>
+  <Categories>
+    <Category Id="0" Label="SyntaxNode" />
+    <Category Id="1" Label="SyntaxToken" />
+    <Category Id="2" Label="Leading SyntaxTrivia" />
+    <Category Id="3" Label="Trailing SyntaxTrivia" />
+  </Categories>
+  <Properties>
+    <Property Id="AllowsAnyExpression" Label="AllowsAnyExpression" DataType="System.String" />
+    <Property Id="Arity" Label="Arity" DataType="System.String" />
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="ContainsAnnotations" Label="ContainsAnnotations" DataType="System.String" />
+    <Property Id="ContainsDiagnostics" Label="ContainsDiagnostics" DataType="System.String" />
+    <Property Id="ContainsDirectives" Label="ContainsDirectives" DataType="System.String" />
+    <Property Id="Errors" Label="Errors" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FullSpan" Label="FullSpan" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="HasLeadingTrivia" Label="HasLeadingTrivia" DataType="System.String" />
+    <Property Id="HasStructure" Label="HasStructure" DataType="System.String" />
+    <Property Id="HasStructuredTrivia" Label="HasStructuredTrivia" DataType="System.String" />
+    <Property Id="HasTrailingTrivia" Label="HasTrailingTrivia" DataType="System.String" />
+    <Property Id="IsDirective" Label="IsDirective" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsMissing" Label="IsMissing" DataType="System.String" />
+    <Property Id="IsNint" Label="IsNint" DataType="System.String" />
+    <Property Id="IsNotNull" Label="IsNotNull" DataType="System.String" />
+    <Property Id="IsNuint" Label="IsNuint" DataType="System.String" />
+    <Property Id="IsStructuredTrivia" Label="IsStructuredTrivia" DataType="System.String" />
+    <Property Id="IsUnmanaged" Label="IsUnmanaged" DataType="System.String" />
+    <Property Id="IsVar" Label="IsVar" DataType="System.String" />
+    <Property Id="Kind" Label="Kind" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="Span" Label="Span" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Type" Label="Type" DataType="System.String" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="SyntaxNode" ValueLabel="Has category">
+      <Condition Expression="HasCategory('0')" />
+      <Setter Property="Background" Value="Blue" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="SyntaxToken" ValueLabel="Has category">
+      <Condition Expression="HasCategory('1')" />
+      <Setter Property="Background" Value="DarkGreen" />
+      <Setter Property="FontStyle" Value="Italic" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Leading SyntaxTrivia" ValueLabel="Has category">
+      <Condition Expression="HasCategory('2')" />
+      <Setter Property="Background" Value="White" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Trailing SyntaxTrivia" ValueLabel="Has category">
+      <Condition Expression="HasCategory('3')" />
+      <Setter Property="Background" Value="DimGray" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Missing / Zero-Width" ValueLabel="Has category">
+      <Condition Expression="HasCategory('4')" />
+      <Setter Property="Background" Value="Black" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Bad / Skipped" ValueLabel="Has category">
+      <Condition Expression="HasCategory('5')" />
+      <Setter Property="Background" Value="Maroon" />
+      <Setter Property="FontStyle" Value="Bold" />
+      <Setter Property="NodeRadius" Value="5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Has Diagnostics" ValueLabel="Has category">
+      <Condition Expression="HasCategory('6')" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+  </Styles>
+</DirectedGraph>
