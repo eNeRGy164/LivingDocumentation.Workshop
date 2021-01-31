@@ -1,0 +1,14 @@
+@startuml
+Bob -> Alice : hello
+@enduml
+
+# tag::class[]
+@startuml
+class Dummy {
+ -field1
+ #field2
+ ~method1()
+ +method2()
+}
+@enduml
+# end::class[]

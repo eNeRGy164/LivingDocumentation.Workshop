@@ -1,0 +1,112 @@
+= AsciiDoc samples
+:source-highlighter: highlight.js
+:icons: font
+
+This file contains some sample constructs that are not possible with Markdown.
+
+More on AsciiDoc
+https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc Language Documentation]
+
+== Code blocks
+
+.Code example
+[source, json]
+----
+{ 
+    "key": "bla",
+    "key2": 1, <1>
+    "other": [ true, false ] <2>
+}
+----
+<1> an integer
+<2> an array
+
+== Diagrams
+
+.PlantUML example
+[plantuml,alice-and-bob,png]
+----
+@startuml
+Bob -> Alice : hello
+@enduml
+----
+
+== Includes
+
+.Included
+[plantuml]
+----
+include::plantuml.samples.puml[tag=class]
+----
+
+== Quotes
+
+[quote]
+____
+I hold it that a little rebellion now and then is a good thing,
+and as necessary in the political world as storms in the physical.
+-- Thomas Jefferson
+____
+
+== Admonitions
+
+[IMPORTANT] 
+.Feeding the Werewolves
+==== 
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+== Sidebars
+
+.Optional Title
+****
+Sidebars are used to visually separate auxiliary bits of content
+that supplement the main text.
+
+TIP: They can contain any type of content.
+
+.Source code block in a sidebar
+[source,js]
+----
+const { expect, expectCalledWith, heredoc } = require('../test/test-utils')
+----
+****
+
+== Tables
+
+|===
+|Normal Style |AsciiDoc Style
+
+|This cell isn't prefixed with an `a`, so the processor doesn't interpret the following lines as an AsciiDoc list.
+
+* List item 1
+* List item 2
+* List item 3
+
+a|This cell is prefixed with an `a`, so the processor interprets the following lines as an AsciiDoc list.
+
+* List item 1
+* List item 2
+* List item 3
+
+|This cell isn't prefixed with an `a`, so the processor doesn't interpret the listing block delimiters or the `source` style.
+
+[source,python]
+----
+import os
+print ("%s" %(os.uname()))
+----
+
+a|This cell is prefixed with an `a`, so the listing block is processed and rendered according to the `source` style rules.
+
+[source,python]
+----
+import os
+print "%s" %(os.uname())
+----
+
+|===
