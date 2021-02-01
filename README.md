@@ -43,7 +43,7 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
 ### Part 2: Generate documentation
 
-* Living Documentation
+* [Living Documentation](./2.living-documentation/21.living-documentation.md)
 
   Quickly start acting on your code by generating an intermediate file with all relevant parts extracted from the syntax trees.
 
