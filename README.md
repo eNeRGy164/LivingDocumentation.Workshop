@@ -47,7 +47,7 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Quickly start acting on your code by generating an intermediate file with all relevant parts extracted from the syntax trees.
 
-* Work with Types
+* [Work with Types](./2.living-documentation/22.work-with-types.md)
 
   Get familiar with the types and start querying relations between classes, methods, invocations, etc.
 
