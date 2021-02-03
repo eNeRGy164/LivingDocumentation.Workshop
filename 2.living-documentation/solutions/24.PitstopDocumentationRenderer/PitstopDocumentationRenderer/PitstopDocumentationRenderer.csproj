@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,7 +10,6 @@
     <PackageReference Include="LivingDocumentation.RenderExtensions" Version="0.3.15" />
     <PackageReference Include="LivingDocumentation.UML" Version="0.3.15" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="PlantUML.Builder" Version="0.1.36" />
   </ItemGroup>
 
 </Project>
