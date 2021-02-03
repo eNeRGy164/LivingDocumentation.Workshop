@@ -19,7 +19,7 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
 ## Structure
 
-### Part 1: Roslyn
+### Part 1: [Roslyn](1.roslyn/README.md)
 
 * [Get familiar with Syntax Trees](1.roslyn/11.visual-trees.md)
 
@@ -41,7 +41,7 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Use [Buildalyzer](https://github.com/daveaglick/Buildalyzer) to import a whole project or solution to work with.
 
-### Part 2: Generate documentation
+### Part 2: [Generate documentation](1.roslyn/README.md)
 
 * [Living Documentation](./2.living-documentation/21.living-documentation.md)
 
