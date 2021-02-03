@@ -37,7 +37,6 @@ Of course, issues and pull requests are always welcome if you see something to i
 
   Build a class diagram from an aggregate.
 
-* Generate a sequence diagram
+* [Generate a Sequence Diagram](2.living-documentation/25.generate-sequence.md)
 
   Build a sequence diagram from services interacting with each other.
-

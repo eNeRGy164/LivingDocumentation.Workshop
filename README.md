@@ -72,6 +72,6 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Build a class diagram from an aggregate.
 
-* Generate a sequence diagram
+* [Generate a Sequence Diagram](2.living-documentation/25.generate-sequence.md)
 
   Build a sequence diagram from services interacting with each other.
