@@ -33,14 +33,11 @@ Of course, issues and pull requests are always welcome if you see something to i
 
   Build a document describing components based on the parts of you code.
 
-* Generate a class diagram
+* [Generate a Class Diagram](24.generate-class-diagram.md)
 
-  Build a class diagram from a POCO.
+  Build a class diagram from an aggregate.
 
 * Generate a sequence diagram
 
   Build a sequence diagram from services interacting with each other.
 
-* Generate an entity diagram
-
-  Extend on class diagrams including relations with other parts.
