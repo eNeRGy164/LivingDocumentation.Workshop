@@ -29,18 +29,6 @@ More information about these tools can be found in the article [Explore code wit
 
 Use Visual Studio Code to write Markdown, PlantUML and AsciiDoc files.
 
-### Plugin: AsciiDoc
-
-`ext install asciidoctor.asciidoctor-vscode`
-
-<https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode>
-
-#### Extension Settings
-
-```json
-"asciidoc.preview.useEditorStyle": false
-```
-
 ### Plugin: PlantUML
 
 `ext install jebbs.plantuml`
@@ -61,26 +49,8 @@ For example using Docker:
 docker run -d -p 8080:8080 plantuml/plantuml-server:jetty
 ```
 
-## AsciiDocFX
-
-<https://asciidocfx.com/#truehow-to-install-asciidocfx>
-
-With AsciiDocFX you can edit, view and export AsciiDoc files.
-
-### Graphviz
-
-For some diagrams, you can get an exception that graphviz is required.
-
-Pick any of these to install:
-
-* <https://www2.graphviz.org/Packages/stable/windows/10/cmake/Release/x64/graphviz-install-2.44.1-win64.exe>
-  
-  Make sure the executable is in you path, f.e. `C:\Graphviz\bin`
-* `> choco install graphviz`
-* `> winget install graphviz`
-
 ## Docker Desktop
 
-Optional, but can replace remote or local dependencies like PlantUML Server and AsciiDoctor.
+Optional, but can replace remote or local dependencies like PlantUML Server.
 
 <https://www.docker.com/products/docker-desktop>
