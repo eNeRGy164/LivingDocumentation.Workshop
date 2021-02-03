@@ -46,7 +46,7 @@ For example code it's fine to use the plublic renderer. You can render locally b
 For example using Docker:
 
 ```sh
-docker run -d -p 8080:8080 plantuml/plantuml-server:jetty
+❯ docker run -d -p 8080:8080 plantuml/plantuml-server:jetty
 ```
 
 ## Docker Desktop
