@@ -8,7 +8,20 @@ We are going to discover how we can use Roslyn to generate documentation from .N
 
 See [INSTALLATION.md](INSTALLATION.md) for details about all prerequisites.
 
-## Download this workshop
+## Required Knowledge
+
+* Be very experienced with C#
+* Able to write LINQ queries
+* Know how to clone git repos
+* Have an understanding of DDD
+* Have knowledge of Markdown
+* Able to draw UML diagrams
+
+Optional knowledge:
+
+* Familair with AsciiDoc and PlantUML
+
+## Download this Workshop
 
 Clone this workshop on your local system.
 
