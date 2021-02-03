@@ -41,17 +41,17 @@ git clone "https://github.com/eNeRGy164/LivingDocumentation.Workshop.git"
 
   Use [Buildalyzer](https://github.com/daveaglick/Buildalyzer) to import a whole project or solution to work with.
 
-### Part 2: [Generate documentation](1.roslyn/README.md)
+### Part 2: [Generate documentation](2.living-documentation/README.md)
 
-* [Living Documentation](./2.living-documentation/21.living-documentation.md)
+* [Living Documentation](2.living-documentation/21.living-documentation.md)
 
   Quickly start acting on your code by generating an intermediate file with all relevant parts extracted from the syntax trees.
 
-* [Work with Types](./2.living-documentation/22.work-with-types.md)
+* [Work with Types](2.living-documentation/22.work-with-types.md)
 
   Get familiar with the types and start querying relations between classes, methods, invocations, etc.
 
-* [Generate documentation](./2.living-documentation/23.generate-documentation.md)
+* [Generate documentation](2.living-documentation/23.generate-documentation.md)
 
   Build a document describing components based on the parts of you code.
 
