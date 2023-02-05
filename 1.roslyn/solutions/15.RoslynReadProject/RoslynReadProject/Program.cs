@@ -6,49 +6,40 @@ using Buildalyzer.Workspaces;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace RoslynReadProject
+var analyzerManager = new AnalyzerManager();
+var projectAnalyzer = analyzerManager.GetProject(@"..\..\..\..\..\11.ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj");
+
+var analyzerResults = projectAnalyzer.Build().First();
+
+Console.WriteLine($"{analyzerResults.References.Length} references");
+Console.WriteLine($"{analyzerResults.SourceFiles.Length} source files");
+
+Console.WriteLine();
+foreach (var file in analyzerResults.SourceFiles)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var analyzerManager = new AnalyzerManager();
-            var projectAnalyzer = analyzerManager.GetProject(@"D:\workshop\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj");
+    Console.WriteLine(file);
+}
 
-            var analyzerResults = projectAnalyzer.Build().First();
+var workspace = projectAnalyzer.GetWorkspace();
 
-            Console.WriteLine($"{analyzerResults.References.Length} references");
-            Console.WriteLine($"{analyzerResults.SourceFiles.Length} source files");
+var project = workspace.CurrentSolution.Projects.First();
+var compilation = project.GetCompilationAsync().Result;
 
-            Console.WriteLine();
-            foreach (var file in analyzerResults.SourceFiles)
-            {
-                Console.WriteLine(file);
-            }
+var diagnostics = compilation.GetDiagnostics();
 
-            var workspace = projectAnalyzer.GetWorkspace();
+foreach (var error in diagnostics.Where(l => l.Severity > DiagnosticSeverity.Hidden))
+{
+    Console.WriteLine(error);
+}
 
-            var project = workspace.CurrentSolution.Projects.First();
-            var compilation = project.GetCompilationAsync().Result;
+foreach (var syntaxTree in compilation.SyntaxTrees)
+{
+    var root = (CompilationUnitSyntax)syntaxTree.GetRoot();
+    var text = root.GetText();
 
-            var diagnostics = compilation.GetDiagnostics();
+    Console.WriteLine();
+    Console.WriteLine(Path.GetFileName(syntaxTree.FilePath));
+    Console.WriteLine(text.GetSubText(root.Span));
 
-            foreach (var error in diagnostics.Where(l => l.Severity > DiagnosticSeverity.Hidden))
-            {
-                Console.WriteLine(error);
-            }
-
-            foreach (var syntaxTree in compilation.SyntaxTrees)
-            {
-                var root = (CompilationUnitSyntax)syntaxTree.GetRoot();
-                var text = root.GetText();
-
-                Console.WriteLine();
-                Console.WriteLine(Path.GetFileName(syntaxTree.FilePath));
-                Console.WriteLine(text.GetSubText(root.Span));
-
-                var semanticModel = compilation.GetSemanticModel(syntaxTree);
-            }
-        }
-    }
+    var semanticModel = compilation.GetSemanticModel(syntaxTree);
 }

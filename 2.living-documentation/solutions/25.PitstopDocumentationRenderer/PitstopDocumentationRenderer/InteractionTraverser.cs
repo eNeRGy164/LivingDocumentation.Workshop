@@ -20,7 +20,7 @@ namespace PitstopDocumentationRenderer
         {
             var result = new Interactions();
 
-            var handlers = Program.Types.HandlersFor(originatingMessage);
+            var handlers = StaticInfo.Types.HandlersFor(originatingMessage);
 
             foreach (var handler in handlers)
             {
@@ -73,14 +73,14 @@ namespace PitstopDocumentationRenderer
             {
                 case InvocationDescription invocation when IsMessageCreation(invocation):
 
-                    var message = Program.Types.First(invocation.Arguments.Skip(invocation.Name == "RaiseEvent" ? 0 : 1).First().Type);
+                    var message = StaticInfo.Types.First(invocation.Arguments.Skip(invocation.Name == "RaiseEvent" ? 0 : 1).First().Type);
 
                     return ExtractConcequences(message, services, Service(handler), inAlternativeFlow, invocation.Arguments);
 
                 case InvocationDescription invocation:
                     {
                         var result = new Interactions();
-                        var consequences = Program.Types.GetInvocationConsequenceStatements2(invocation).Where(s => s != invocation);
+                        var consequences = StaticInfo.Types.GetInvocationConsequenceStatements2(invocation).Where(s => s != invocation);
 
                         foreach (var consequence in consequences)
                         {

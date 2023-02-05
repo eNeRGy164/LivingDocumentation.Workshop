@@ -16,7 +16,7 @@ You will be using [LivingDocumentation](https://github.com/eNeRGy164/LivingDocum
 This is not a requirement to generate documentation in your own projects.
 But it is build on experience of doing this in a couple of projects and will save a lot of time to get you started.
 
-As LivingDocumentation is also open source, you can replace any method with your own version to tailor the documentation to your needs.
+As *LivingDocumentation* is also open source, you can replace any method with your own version to tailor the documentation to your needs.
 Of course, issues and pull requests are always welcome if you see something to improve.
 
 ## Structure

@@ -2,7 +2,7 @@
 
 Hello, welcome to the Living Documentation Workshop.
 
-We are going to discover how we can use Roslyn to generate documentation from .NET source code.
+We are going to discover how we can use Roslyn to generate documentation from dotnet source code.
 
 ## Prerequisites
 

@@ -105,9 +105,9 @@ namespace PitstopDocumentationRenderer
             InvocationDescription implementatedInvocation = null;
 
             // If the type is an interface, look for the first implementation of that interface and act as if that one was invoked.
-            if (Program.Types.FirstOrDefault(invocation.ContainingType)?.Type == TypeType.Interface)
+            if (StaticInfo.Types.FirstOrDefault(invocation.ContainingType)?.Type == TypeType.Interface)
             {
-                var implementation = Program.Types.First(t => t.ImplementsType(invocation.ContainingType));
+                var implementation = StaticInfo.Types.First(t => t.ImplementsType(invocation.ContainingType));
                 implementatedInvocation = new InvocationDescription(implementation.FullName, invocation.Name);
                 implementatedInvocation.Arguments.AddRange(invocation.Arguments);
             }

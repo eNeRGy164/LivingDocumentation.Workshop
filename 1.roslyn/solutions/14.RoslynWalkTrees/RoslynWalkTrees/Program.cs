@@ -2,51 +2,46 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using RoslynWalkTrees;
 
-namespace RoslynWalkTrees
-{
-    class Program
+SyntaxTree tree = CSharpSyntaxTree.ParseText(
+    """
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using Microsoft.CodeAnalysis;
+    using Microsoft.CodeAnalysis.CSharp;
+ 
+    namespace TopLevel
     {
-        static void Main(string[] args)
+        using Microsoft;
+        using System.ComponentModel;
+ 
+        namespace Child1
         {
-            SyntaxTree tree = CSharpSyntaxTree.ParseText(@"using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp;
+            using Microsoft.Win32;
+            using System.Runtime.InteropServices;
  
-namespace TopLevel
-{
-    using Microsoft;
-    using System.ComponentModel;
+            class Foo { }
+        }
  
-    namespace Child1
-    {
-        using Microsoft.Win32;
-        using System.Runtime.InteropServices;
+        namespace Child2
+        {
+            using System.CodeDom;
+            using Microsoft.CSharp;
  
-        class Foo { }
-    }
- 
-    namespace Child2
-    {
-        using System.CodeDom;
-        using Microsoft.CSharp;
- 
-        class Bar { }
-    }
-}");
-
-            var root = (CompilationUnitSyntax)tree.GetRoot();
-
-            var collector = new UsingCollector();
-            collector.Visit(root);
-
-            foreach (var directive in collector.Usings)
-            {
-                Console.WriteLine(directive.Name);
-            }
+            class Bar { }
         }
     }
+    """);
+
+var root = (CompilationUnitSyntax)tree.GetRoot();
+
+var collector = new UsingCollector();
+collector.Visit(root);
+
+foreach (var directive in collector.Usings)
+{
+    Console.WriteLine(directive.Name);
 }

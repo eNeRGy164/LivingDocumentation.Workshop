@@ -1,11 +1,11 @@
 # Installation
 
-## Visual Studio 2019
+## Visual Studio 2022
 
 <https://visualstudio.microsoft.com/downloads/>
 
-Use Visual Studio 2019 to vissualy inspect code, and to write and debug code.
-The syntax tree debugging experience is much better in Visual Studio 2019 compared to Visual Studio Code.
+Use Visual Studio 2022 to vissualy inspect code, and to write and debug code.
+The syntax tree debugging experience is much better in Visual Studio compared to Visual Studio Code.
 
 ### Syntax Visualizer and DGML editor
 
