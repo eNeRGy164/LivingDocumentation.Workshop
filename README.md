@@ -1,5 +1,12 @@
 # Living Documentation Workshop
 
+> [!WARNING]
+> This repository is archived. Active development of this workshop has moved to [DendroDocs](https://github.com/dendrodocs).
+>
+> See: <https://github.com/dendrodocs/workshops>
+
+---
+
 Hello, welcome to the Living Documentation Workshop.
 
 We are going to discover how we can use Roslyn to generate documentation from .NET source code.
